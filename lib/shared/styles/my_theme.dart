@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:todo_app/shared/styles/colors.dart';
 
 class MyThemeData {
-
-
   static ThemeData lightTheme = ThemeData(
     primaryColor: LIGHTPRIMARY,
     scaffoldBackgroundColor: GREENBackgground,
@@ -31,24 +29,22 @@ class MyThemeData {
         fontWeight: FontWeight.bold,
         color: LIGHTPRIMARY,
       ),
-
       subtitle2: TextStyle(
         fontSize: 18,
         fontWeight: FontWeight.bold,
         color: GREENCOLOR,
       ),
     ),
-    appBarTheme:  AppBarTheme(
+    appBarTheme: AppBarTheme(
       backgroundColor: LIGHTPRIMARY,
       elevation: 20,
       centerTitle: true,
       iconTheme: IconThemeData(color: Colors.white),
     ),
-    bottomNavigationBarTheme:  BottomNavigationBarThemeData(
-      selectedLabelStyle: TextStyle(
-          color: DARKBOLD,
-          fontSize: 22
-      ),
+    bottomNavigationBarTheme: BottomNavigationBarThemeData(
+      backgroundColor: Colors.white,
+      elevation: 0,
+      selectedLabelStyle: TextStyle(color: DARKBOLD, fontSize: 22),
       selectedIconTheme: IconThemeData(
         size: 30,
         color: LIGHTPRIMARY,
@@ -57,6 +53,10 @@ class MyThemeData {
         size: 28,
         color: Colors.grey,
       ),
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      backgroundColor: LIGHTPRIMARY,
+      shape: StadiumBorder(side: BorderSide(color: Colors.white, width: 3)),
     ),
   );
   static ThemeData darkTheme = ThemeData(
@@ -67,7 +67,7 @@ class MyThemeData {
       background: Colors.transparent,
       onBackground: LIGHTDARK,
       primary: DARKPRIMARY,
-      onPrimary:LIGHTDARK,
+      onPrimary: LIGHTDARK,
       surface: DARKPRIMARY,
       onSurface: Colors.grey,
       secondary: LIGHTPRIMARY,
@@ -92,22 +92,25 @@ class MyThemeData {
         color: Colors.white,
       ),
     ),
-    appBarTheme:  AppBarTheme(
+    appBarTheme: AppBarTheme(
       backgroundColor: LIGHTPRIMARY,
       elevation: 20,
       centerTitle: true,
       iconTheme: IconThemeData(color: Colors.white),
     ),
     bottomNavigationBarTheme: BottomNavigationBarThemeData(
-      selectedLabelStyle: TextStyle(
-        color: LIGHTPRIMARY,
-        fontSize: 22
-      ),
+      elevation: 0,
+      selectedLabelStyle: TextStyle(color: LIGHTPRIMARY, fontSize: 22),
       selectedIconTheme: IconThemeData(size: 30, color: LIGHTPRIMARY),
       unselectedIconTheme: IconThemeData(
         size: 28,
         color: Colors.white,
       ),
+    ),
+    floatingActionButtonTheme: FloatingActionButtonThemeData(
+      elevation: 0,
+      backgroundColor: LIGHTPRIMARY,
+      shape: StadiumBorder(side: BorderSide(color: Colors.white, width: 3)),
     ),
   );
 }

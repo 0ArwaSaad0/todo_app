@@ -15,7 +15,7 @@ class TodoApp extends StatelessWidget {
       routes: {
         HomeLayout.routeName: (c) => HomeLayout(),
       },
-      theme:MyThemeData.lightTheme,
+      theme: MyThemeData.lightTheme,
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.light,
     );
