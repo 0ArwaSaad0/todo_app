@@ -1,0 +1,16 @@
+{
+
+    "light": "فاتح",
+    "dark" : "غامق",
+    "english":"انجليزيه",
+    "arabic":"عربيه",
+    "language":"اللغه",
+    "app_title":"اداره المهام",
+    "my_theme":"الوضع",
+    "task_title" :"عنوان المهمه",
+    "task_description":"وصف المهمه",
+    "add_new_task":"اضف مهمه جديده",
+    "select_date":"اختر التاريخ",
+    "add_task":"اضف مهمه"
+
+}

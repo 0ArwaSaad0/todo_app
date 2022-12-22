@@ -1,0 +1,14 @@
+{
+    "light": "Light",
+    "dark" : "Dark",
+    "english":"English",
+    "arabic":"Arabic",
+    "language":"Language",
+    "app_title" :"Todo App",
+    "my_theme" :"My Theme",
+    "task_title" :"Enter Task Title",
+    "task_description":"Enter Task Description",
+    "add_new_task":"Add New Task",
+    "select_date":"Select Date",
+    "add_task":"ADD TASK"
+}
