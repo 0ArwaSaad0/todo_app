@@ -31,7 +31,10 @@ class HomeLayout extends StatelessWidget {
         onPressed: () {
           showBottomSheet(context);
         },
-        child: const Icon(Icons.add,color: Colors.white,),
+        child: const Icon(
+          Icons.add,
+          color: Colors.white,
+        ),
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 0,
@@ -61,5 +64,12 @@ class HomeLayout extends StatelessWidget {
 
 List<Widget> tabs = [TaskList(), Settings()];
 showBottomSheet(context) {
-  showModalBottomSheet(context: context, builder: (c) => AddTaskList());
+  showModalBottomSheet(
+      context: context,
+      isScrollControlled: true,
+      builder: (context) => Padding(
+        padding: EdgeInsets.only(
+            bottom: MediaQuery.of(context).viewInsets.bottom),
+            child: AddTaskList(),
+          ));
 }

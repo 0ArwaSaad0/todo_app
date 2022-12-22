@@ -12,6 +12,7 @@ class MyProvider extends ChangeNotifier {
   }
 
   GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
   String languageCode = 'en';
   changeLanguage(lang) {
     languageCode = lang;
@@ -24,3 +25,5 @@ class MyProvider extends ChangeNotifier {
     notifyListeners();
   }
 }
+
+

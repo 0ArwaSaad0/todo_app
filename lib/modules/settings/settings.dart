@@ -7,6 +7,7 @@ import 'package:todo_app/shared/component/bottom_sheet/lang_bottom_sheet.dart';
 import 'package:todo_app/shared/component/bottom_sheet/theme_bottom_sheet.dart';
 import 'package:todo_app/shared/styles/colors.dart';
 
+
 class Settings extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
